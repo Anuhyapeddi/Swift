@@ -84,6 +84,94 @@ var name = "Alice"
 var job = "developer"
 var intro = "Hi!, I am \(name), I am a \(job)" // Hi!, I am Alice, I am a developer
 
+// Arrays
+
+var fruits = ["apple", "banana", "dragon fruit", "berries"]
+var cost = [ 20.7, 3.7, 5.8, 10.45 ]
+fruits.append("grapes") // add at the end of the fruits array
+fruits.insert("mango", at: 1) // insert item at given index
+fruits.remove(at: 0) // remove an item at a given index
+fruits.removeLast() // remove the last item in the fruits array
+fruits.removeAll() // remove all the items from the fruits array
+
+// < and > are called as angle brackets 
+
+var quantity = Array<Int>()
+quantity.append(1) // 1
+
+var quantity = [Int]()
+quantity.append(1) // 1 ; both "Array<Int>()" and "[Int]()" are same
+
+var icecreamFlavours = [ "chocolate", "mango", "coffee" ]
+icecreamFlavours.count // 3
+icecreamFlavours.contains("mango") // true
+icecreamFlavours.sorted() // ["chocolate", "coffee", "mango"]
+icecreamFlavours.reversed() // ReversedCollection<Array<String>>
+
+var icecreamFlavours = [ "chocolate", "mango", "coffee" ]
+icecreamFlavours.append(1) // ERROR: you can add 1 to icecreamFlavours. because it is type-specific; as icecreamFlavours has a string type, you can add string elements
+
+// Dictionaries
+
+// method 1
+var childrens = [ "Grade4" : 10, "Grade5" : 15, "Grade6" : 21 ] // you have to store the same type of data
+print(childrens["Grade5", default: 0]) // providing a default value, so if the value doesn't exist, return the default value
+
+// method 2 
+var childrens = [String: Int]()
+childrens["Grade4"] = 10
+childrens["Grade5"] = 15
+childrens["Grade6"] = 21
+
+// Both methods 1 and 2 give you the same result
+
+// sets
+
+// method 1
+var hobbies = Set([ "leetcode", "playing badminton", "cooking"])
+
+// method 2
+var hobbies = Set<String>()
+hobbies.insert("leetcode")
+hobbies.insert("playing badminton")
+hobbies.insert("cooking") 
+
+// enums
+
+// declaring enums
+// method 1
+
+enum Weekdays {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+    case sunday
+}
+
+// method 2
+
+enum Weekdays {
+    case monday, tuesday, wednesday, Thursday, friday, saturday, sunday
+}
+
+// using the Weekends enum 
+// method 1
+
+var day = Weekday.monday
+day = Weekday.tuesday
+
+// method 2
+
+var day = Weekday.monday
+day = .tuesday
+day = .wednesday
+
+
+
+
 
 
 
