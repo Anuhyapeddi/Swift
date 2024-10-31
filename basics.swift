@@ -1,5 +1,8 @@
 // Declaring Constants and Variables
 
+// usage of var and let
+// var(changeable) and let(non-changeable)
+
 let maximumNumberOfLoginAttempts = 10
 var currentLoginAttempt = 0
 
