@@ -169,6 +169,10 @@ var day = Weekday.monday
 day = .tuesday
 day = .wednesday
 
+// type annotations
+
+
+
 
 
 
