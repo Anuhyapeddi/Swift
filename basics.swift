@@ -3,7 +3,7 @@
 // usage of var and let
 // var(changeable) and let(non-changeable)
 
-var name = "alive"
+var name = "alice"
 name = "bob" //It is possible to change the value of the name variable
 
 let name = "charle"
@@ -171,13 +171,34 @@ day = .wednesday
 
 // type annotations
 
+//This is how you can assign a type to a variable
+// method 1
+var type: [String] = [ "Diwali", "Dasara", "Navratri"] // [ "Diwali", "Dasara", "Navratri"]
+var type1: [String] = [] // []
+var type2: [String] = [String]() // []
+var type3 = [String]()  // []
 
+// method 2
+var type: String 
+type = "swift"
 
+//type inference vs type annotations 
 
+// type inference 
+// method 1
+var language = "swift" 
 
+// method 2
+var language
+language = "swift"
 
+// type annotations
+// method 1
+var language: String = "swift"
 
-
+// method 2
+var language: String 
+language = "swift"
 
 
 
